@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata_list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="HydraMeta.xsd">
-    <metadata version="498096651" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
+    <metadata version="498121419" subsystem_name="wlan" subsystem_layer="fw" subsystem_id="2">
         <source_control id="$Id$" time="$DateTime$" change="$Change$" author="$Author$" />
         <enum_def enum_name="unifiCSROnlyMIBShield">
             <enum_entry enum_label="open" enum_value="1" />
@@ -4886,6 +4886,12 @@
             <nature>software</nature><!-- scan -->
         </config_element>
         <!-- End of roaming-relevant MIBs -->
+        <config_element name="unifiIgmpOffloadActivated" psid="2489">
+            <description_user>Activate IGMP IPv4 Offloading.</description_user>
+            <type>boolean</type>
+            <default>true</default>
+            <nature>software</nature>
+        </config_element>
         <config_element name="dot11TDLSPeerUAPSDIndicationWindow" psid="53">
             <description_user>The minimum time that needs to pass after the most recent TPU SP, before a RAME_TPU_SP indication can be sent to MLME</description_user>
             <type>uint16</type>
